@@ -16,7 +16,11 @@ const TablePage = () => {
         <div className={`p-3 m-2 ${fruits.color}`}></div>
       ),
     },
-    { label: "Score", render: (fruits: { score: number }) => fruits.score },
+    {
+      label: "Score",
+      render: (fruits: { score: number }) => fruits.score,
+      header: () => <th className='bg-red-500'>Score</th>,
+    },
   ];
   return <Table data={data} config={config} />;
 };
