@@ -1,13 +1,11 @@
-const Cards = (props) => {
-    debugger
-    console.log(props)
 
-     return ( <div>
-     <div className='restro-image'> <img src={data.image} alt={data.restroName} className='restro-logo' /></div>
-      <h3>{data.restroName}</h3>
-      <h5>{data.cusines}</h5>
-      <h5>{data.rating}</h5>
-      <h5>{data.cookTime}</h5>
+const Cards = ({cardData}) => {
+     return ( <div className="restro-cards" >
+     <div className='restro-image'> <img src={cardData.image} alt={cardData.restroName} className='restro-logo' /></div>
+      <h3>{cardData.restroName}</h3>
+      <h5>{cardData.cusines}</h5>
+      <h5>{cardData.rating}</h5>
+      <h5>{cardData.cookTime}</h5>
       </div>
      )
   }

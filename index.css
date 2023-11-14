@@ -42,9 +42,10 @@
 }
 .filter {
     padding: 10px;
+    display: flex;
 }
 .filter-btn {
-    
+    margin-left: 10px;
 }
 .restro-logo {
     width: 100%;
