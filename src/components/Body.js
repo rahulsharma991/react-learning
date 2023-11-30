@@ -2,11 +2,13 @@ import Cards from './Cards';
 import {restroData} from '../utils/restroData';
 import { useState,useEffect } from 'react';
 import Shimmer from './Shimmer';
+import useOnlineStatus from '../utils/custom-hooks/useOnlineStatus';
 
 const Body = () => {
     const [listofRestraunts, setListofRestraunts] = useState([]);
     const [searchedData,setSearchedData] = useState([]);
     const [searchText,setSearchText] = useState("");
+    const onlineStatus = useOnlineStatus();
    function getTopRatedRestraunts() {
         const filteredRestraunts = restroData.filter(data => {
             return Number(data.rating) > 4;
@@ -24,7 +26,9 @@ const Body = () => {
         setSearchedData(searchData);
     }
     useEffect(()=> {setListofRestraunts(restroData),setSearchedData(restroData)},[]);
-
+    if(!onlineStatus) {
+        return <h1>No internet</h1>
+    }
     return listofRestraunts.length == 0? <Shimmer /> : (
       <div className='body'>
        <div className='filter'>
