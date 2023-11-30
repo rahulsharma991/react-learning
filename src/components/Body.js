@@ -38,7 +38,6 @@ const Body = () => {
        {
         searchedData.map(data => (<Cards key={data.id} cardData={data}/>))
        }
-    
         </div>
       </div>
     )
