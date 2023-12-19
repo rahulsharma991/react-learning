@@ -5,6 +5,7 @@ export const restroData = [
         cusines: 'Chicken, Burger, Wrap',
         rating: '4.1',
         cookTime: '38min',
+        isPromoted: false,
         image: 'https://www.shutterstock.com/image-vector/kfc-logo-icon-art-design-260nw-2269871217.jpg',
         items: [
             {
@@ -13,15 +14,15 @@ export const restroData = [
                 type: [
                     {
                         id: 1,
-                        value: 'Aloo Tikki Burger', 
+                        itemName: 'Aloo Tikki Burger', 
                     },
                     {
                         id: 2,
-                        value: 'chicken burger', 
+                        itemName: 'chicken burger', 
                     },
                     {
                         id: 3,
-                        value:  'Spicy Burger', 
+                        itemName:  'Spicy Burger', 
                     },  
                 ]
             },
@@ -31,11 +32,11 @@ export const restroData = [
                 type: [
                     {
                         id: 1,
-                        value: 'Panner Wrap', 
+                        itemName: 'Panner Wrap', 
                     },
                     {
                         id: 2,
-                        value: 'Egg Wrap', 
+                        itemName: 'Egg Wrap', 
                     },
                 ]
                 
@@ -46,11 +47,11 @@ export const restroData = [
                 type: [
                     {
                         id:1,
-                        value: 'Lava cake',
+                        itemName: 'Lava cake',
                     },
                     {
                         id: 2,
-                        value: 'Truffle cake'
+                        itemName: 'Truffle cake'
                     }
                 ]
             },
@@ -60,11 +61,11 @@ export const restroData = [
                 type: [
                     {
                         id:1,
-                        value: 'Soft drink',
+                        itemName: 'Soft drink',
                     },
                     {
                         id:2,
-                        value:'Mojito'
+                        itemName:'Mojito'
                     }
                 ]
             }
@@ -76,6 +77,7 @@ export const restroData = [
         cusines: 'Pizza',
         rating: '3.9',
         cookTime: '50min',
+        isPromoted: true,
         image: 'https://yt3.googleusercontent.com/hrcL5ZEF4yvmbCprDRHNs1nLHBesBv0jAEaNtl3-5w2KrCC857EeLlgFf_vy65FxSyzHODT5ng=s900-c-k-c0x00ffffff-no-rj',
         items: [
             {
@@ -84,19 +86,19 @@ export const restroData = [
                 type: [
                     {
                         id: 1,
-                        value: 'Corn Pizza', 
+                        itemName: 'Corn Pizza', 
                     },
                     {
                         id: 2,
-                        value: 'Onion Pizza', 
+                        itemName: 'Onion Pizza', 
                     },
                     {
                         id: 3,
-                        value:  'Tomato Pizza', 
+                        itemName:  'Tomato Pizza', 
                     },  
                     {
                         id: 4,
-                        value: 'Capsicum Pizza'
+                        itemName: 'Capsicum Pizza'
                     }
                 ]
             },
@@ -106,11 +108,11 @@ export const restroData = [
                 type: [
                 {
                     id: 1,
-                    value: 'Panner Wrap', 
+                    itemName: 'Panner Wrap', 
                 },
                 {
                     id: 2,
-                    value: 'Egg Wrap', 
+                    itemName: 'Egg Wrap', 
                 },
             ]
             },
@@ -120,11 +122,11 @@ export const restroData = [
                 type: [
                     {
                         id:1,
-                        value: 'Lava cake',
+                        itemName: 'Lava cake',
                     },
                     {
                         id: 2,
-                        value: 'Truffle cake'
+                        itemName: 'Truffle cake'
                     }
                 ]
             },
@@ -133,7 +135,7 @@ export const restroData = [
                 name: 'Beverages',
                 type: [{
                     id:1,
-                    value: 'Pepsi'
+                    itemName: 'Pepsi'
                 }]
             }
         ]
@@ -144,6 +146,7 @@ export const restroData = [
         cusines: 'Burger, Wrap, Pasta',
         rating: '4.2',
         cookTime: '30min',
+        isPromoted: false,
         image: 'https://content3.jdmagicbox.com/comp/panipat/t9/9999px180.x180.140724163640.k7t9/catalogue/bunny-burger-sukhdev-nagar-panipat-fast-food-tuv41j3qy1.jpg?clr=',
         items: [
             {
@@ -151,11 +154,11 @@ export const restroData = [
                 type: [
                     {
                         id:1,
-                        value: 'Bunny paneer burger',
+                        itemName: 'Bunny paneer burger',
                     },
                     {
                         id: 2,
-                        value: 'Bunny chicken burger'
+                        itemName: 'Bunny chicken burger'
                     }
                 ]
             },
@@ -164,11 +167,11 @@ export const restroData = [
                 type: [
                     {
                         id:1,
-                        value: 'Panner Wrap',
+                        itemName: 'Panner Wrap',
                     },
                     {
                         id: 2,
-                        value: 'Egg Wrap'
+                        itemName: 'Egg Wrap'
                     }
                 ]
             },
@@ -177,11 +180,11 @@ export const restroData = [
                 type: [
                     {
                         id:1,
-                        value: 'Lava cake',
+                        itemName: 'Lava cake',
                     },
                     {
                         id: 2,
-                        value: 'Truffle cake'
+                        itemName: 'Truffle cake'
                     }
                 ]
             },
@@ -190,7 +193,7 @@ export const restroData = [
                 type: [
                     {
                         id:1,
-                        value: 'Soft drink',
+                        itemName: 'Soft drink',
                     },
                 ]
             }
@@ -202,6 +205,7 @@ export const restroData = [
         cusines: 'Tacos, wrap, Nachos',
         rating: '4.4',
         cookTime: '50min',
+        isPromoted: false,
         image: 'https://pbs.twimg.com/profile_images/1719239843887353856/tna25awf_400x400.jpg',
         items: [
             {
@@ -210,18 +214,18 @@ export const restroData = [
                 type: [
                     {
                         id:1,
-                        value: 'Soft Taco',
+                        itemName: 'Soft Taco',
                     },
                     {
                         id: 2,
-                        value: 'Fallafel Taco'
+                        itemName: 'Fallafel Taco'
                     },
                     {
                         id: 3,
-                        value: 'Tangy paneer taco'
+                        itemName: 'Tangy paneer taco'
                     }, {
                         id: 4,
-                        value: 'Crunchy taco'
+                        itemName: 'Crunchy taco'
                     }
                 ]
             },
@@ -231,11 +235,11 @@ export const restroData = [
                 type: [
                     {
                         id:1,
-                        value: 'Panner Wrap',
+                        itemName: 'Panner Wrap',
                     },
                     {
                         id: 2,
-                        value: 'Quisseda Wrap'
+                        itemName: 'Quisseda Wrap'
                     }
                 ]
             },
@@ -245,11 +249,11 @@ export const restroData = [
                 type: [
                     {
                         id:1,
-                        value: 'Lava cake',
+                        itemName: 'Lava cake',
                     },
                     {
                         id: 2,
-                        value: 'Truffle cake'
+                        itemName: 'Truffle cake'
                     }
                 ]
             },
@@ -259,11 +263,11 @@ export const restroData = [
                 type: [
                     {
                         id:1,
-                        value: 'Mojito',
+                        itemName: 'Mojito',
                     },
                     {
                         id: 2,
-                        value: 'Soft drink'
+                        itemName: 'Soft drink'
                     }
                 ]
             }
@@ -276,6 +280,7 @@ export const restroData = [
         cusines: 'Thali',
         rating: '3.8',
         cookTime: '30min',
+        isPromoted: true,
         image: 'https://media-cdn.tripadvisor.com/media/photo-s/26/2b/36/f9/an-above-average-family.jpg',
         items: [
             {
@@ -284,15 +289,15 @@ export const restroData = [
                 type: [
                     {
                         id:1,
-                        value: 'Delux Thali',
+                        itemName: 'Delux Thali',
                     },
                     {
                         id: 2,
-                        value: 'Special Thali'
+                        itemName: 'Special Thali'
                     },
                     {
                         id: 3,
-                        value: 'Simple Thali'
+                        itemName: 'Simple Thali'
                     }
                 ]
             },
@@ -302,19 +307,19 @@ export const restroData = [
                 type: [
                     {
                         id:1,
-                        value: 'Khameeri roti',
+                        itemName: 'Khameeri roti',
                     },
                     {
                         id: 2,
-                        value: 'Tandoori roti'
+                        itemName: 'Tandoori roti'
                     },
                     {
                         id: 3,
-                        value: 'Tawa roti'
+                        itemName: 'Tawa roti'
                     }, 
                     {
                         id: 4,
-                        value: 'Missi roti'
+                        itemName: 'Missi roti'
                     }
                 ]
             },
@@ -324,15 +329,15 @@ export const restroData = [
                 type: [
                     {
                         id:1,
-                        value: 'Rajma',
+                        itemName: 'Rajma',
                     },
                     {
                         id: 2,
-                        value: 'Chole'
+                        itemName: 'Chole'
                     },
                     {
                         id: 3,
-                        value: 'Mix veg'
+                        itemName: 'Mix veg'
                     }
                 ]
             },
@@ -342,11 +347,11 @@ export const restroData = [
                 type: [
                     {
                         id:1,
-                        value: 'Gulab jamun',
+                        itemName: 'Gulab jamun',
                     },
                     {
                         id: 2,
-                        value: 'Kheer'
+                        itemName: 'Kheer'
                     }
                 ]
             },
@@ -356,16 +361,147 @@ export const restroData = [
                 type: [
                     {
                         id:1,
-                        value: 'Lassi',
+                        itemName: 'Lassi',
                     },
                     {
                         id: 2,
-                        value: 'CocaCola'
+                        itemName: 'CocaCola'
                     }
                 ]
             }
         ]
-    }
+    },
+    {
+        id:6,
+        restroName: "Bunny Burgers (Sector 127)",
+        cusines: 'Burger, Wrap, Pasta',
+        rating: '4.2',
+        cookTime: '30min',
+        isPromoted: false,
+        image: 'https://content3.jdmagicbox.com/comp/panipat/t9/9999px180.x180.140724163640.k7t9/catalogue/bunny-burger-sukhdev-nagar-panipat-fast-food-tuv41j3qy1.jpg?clr=',
+        items: [
+            {
+                name: 'Burgers',
+                type: [
+                    {
+                        id:1,
+                        itemName: 'Bunny paneer burger',
+                    },
+                    {
+                        id: 2,
+                        itemName: 'Bunny chicken burger'
+                    }
+                ]
+            },
+            {
+                name: 'wraps',
+                type: [
+                    {
+                        id:1,
+                        itemName: 'Panner Wrap',
+                    },
+                    {
+                        id: 2,
+                        itemName: 'Egg Wrap'
+                    }
+                ]
+            },
+            {
+                name: 'Deserts',
+                type: [
+                    {
+                        id:1,
+                        itemName: 'Lava cake',
+                    },
+                    {
+                        id: 2,
+                        itemName: 'Truffle cake'
+                    }
+                ]
+            },
+            {
+                name: 'Beverages',
+                type: [
+                    {
+                        id:1,
+                        itemName: 'Soft drink',
+                    },
+                ]
+            }
+        ]
+    },
+    {
+        id:7,
+        restroName: "KFC (Sector 9)",
+        cusines: 'Chicken, Burger, Wrap',
+        rating: '4.1',
+        cookTime: '38min',
+        isPromoted: false,
+        image: 'https://www.shutterstock.com/image-vector/kfc-logo-icon-art-design-260nw-2269871217.jpg',
+        items: [
+            {
+                id: 1,
+                name: 'Burgers',
+                type: [
+                    {
+                        id: 1,
+                        itemName: 'Aloo Tikki Burger', 
+                    },
+                    {
+                        id: 2,
+                        itemName: 'chicken burger', 
+                    },
+                    {
+                        id: 3,
+                        itemName:  'Spicy Burger', 
+                    },  
+                ]
+            },
+            {
+                id: 2,
+                name: 'wraps',
+                type: [
+                    {
+                        id: 1,
+                        itemName: 'Panner Wrap', 
+                    },
+                    {
+                        id: 2,
+                        itemName: 'Egg Wrap', 
+                    },
+                ]
+                
+            },
+            {
+                id: 3,
+                name: 'Deserts',
+                type: [
+                    {
+                        id:1,
+                        itemName: 'Lava cake',
+                    },
+                    {
+                        id: 2,
+                        itemName: 'Truffle cake'
+                    }
+                ]
+            },
+            {
+                id: 4,
+                name: 'Beverages',
+                type: [
+                    {
+                        id:1,
+                        itemName: 'Soft drink',
+                    },
+                    {
+                        id:2,
+                        itemName:'Mojito'
+                    }
+                ]
+            }
+        ]
+    },
 ]
 
 

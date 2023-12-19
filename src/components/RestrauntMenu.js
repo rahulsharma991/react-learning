@@ -2,8 +2,10 @@ import { useEffect, useState } from "react";
 import { restroData } from "../utils/restroData";
 import { useParams } from "react-router-dom";
 import Shimmer from "./Shimmer";
+import RestrauntCategory from "./RestrauntCategory";
 
 const RestrauntMenu = () => {
+    const [showIndex, setShowIndex] = useState(0)
     const {id} = useParams();
     const [restro, setRestroData] = useState("");
     useEffect(() => {
@@ -16,19 +18,14 @@ const RestrauntMenu = () => {
     },[]);
 
 return !restro.restroName? <Shimmer /> :(
-    <div>
-        <p>{restro.restroName}</p>
-        <h1>Menu</h1>
-        {restro.items.map(outer => (
-            <div key={outer.id}>
-            <h3>{outer.name}</h3>
-            {outer.type.map(inner => (
-                <ul key={inner.id}>
-                    <li>{inner.value}</li>
-                </ul>
-            ))}
-            </div>
-        ))}
+    <div className="px-8 mt-7">
+        <p className="text-3xl">Restraunt Name: {restro.restroName}</p>
+        <h1 className="mt-5 ml-3 text-2xl">Menu</h1>
+        {
+            restro.items.map((category,index) => ( 
+                <RestrauntCategory data={category} key={category.id} showItems={index == showIndex? true: false} setShowIndex={() => setShowIndex(index)}/>
+                ))
+        }
     </div>
 )
 }

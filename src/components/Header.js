@@ -1,20 +1,21 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
 import { LOGO_URL } from "../utils/constants";
 import { Link } from "react-router-dom";
+import UserContext from "../utils/UserContext";
 const Header = () => {
+  const {loggedInUser} = useContext(UserContext)
     const [loginBtn, setLoginBtn] = useState('Login');
     return (
-      <div className='header'>
-        <div className='logo-container'>
-          <img src={LOGO_URL} />
-        </div>
-        <div className='nav-items'>
-          <ul>
-            <li><Link to='/'>Home </Link></li>
-            <li><Link to='about'>About us </Link></li>
-            <li><Link to='contact'>Contact us </Link></li>
-            <li>Cart</li>
-            <button className="login-btn" onClick={() => { setLoginBtn('Logout')}}>{loginBtn}</button>
+      <div className='flex items-center justify-between  bg-pink-200 shadow'>
+          <img src={LOGO_URL} className="w-24 h-24 "/>
+        <div className='nav-items p-4'>
+          <ul className="flex">
+            <li className="m-2"><Link to='/'>Home </Link></li>
+            <li className="m-2"><Link to='about'>About us </Link></li>
+            <li className="m-2"><Link to='contact'>Contact us </Link></li>
+            <li className="m-2">Cart</li>
+            <li className="m-2">{loggedInUser}</li>
+            <button className="bg-teal-50 px-2" onClick={() => { setLoginBtn('Logout')}}>{loginBtn}</button>
           </ul>
         </div>
       </div>
