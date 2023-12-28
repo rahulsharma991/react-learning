@@ -13,7 +13,7 @@ const RestrauntCategory = ({data, showItems, setShowIndex}) => {
                 <span>a</span>
 
                 </div>
-               {showItems && <RestrauntItems items={data.type}/> }
+               {showItems && <RestrauntItems items={data.type} key={data.id}/> }
 
             </div>
 
