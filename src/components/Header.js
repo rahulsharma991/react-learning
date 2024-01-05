@@ -16,7 +16,7 @@ const cartItem = useSelector((store) => store.cart.items.length);
             <li className="m-2"><Link to='/'>Home </Link></li>
             <li className="m-2"><Link to='about'>About us </Link></li>
             <li className="m-2"><Link to='contact'>Contact us </Link></li>
-            <li className="m-2 font-bold">Cart ({cartItem} item)</li>
+            <li className="m-2 font-bold"><Link to='cart'>Cart ({cartItem} item)</Link></li>
             <li className="m-2">{loggedInUser}</li>
             <button className="bg-teal-50 px-2" onClick={() => { setLoginBtn('Logout')}}>{loginBtn}</button>
           </ul>

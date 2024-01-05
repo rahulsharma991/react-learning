@@ -5,6 +5,7 @@ import Body  from './components/Body';
 import Contact from './components/Contact';
 // import About from './components/About';
 import Error from './components/Error';
+import Cart from './components/Cart';
 import { createBrowserRouter,Outlet,RouterProvider } from 'react-router-dom';
 import RestrauntMenu from './components/RestrauntMenu';
 import UserContext from './utils/UserContext';
@@ -44,6 +45,10 @@ const appRoute = createBrowserRouter([
       {
         path: 'contact',
         element: <Contact />
+      },
+      {
+        path: 'cart',
+        element: <Cart />
       },
       {
         path: 'restraunt/:id',
